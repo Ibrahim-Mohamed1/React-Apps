@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-top: 0%;
+}
+.appDiv{
+    /* display: grid; */
+}
+
+.sidenavbar{
+    position: fixed;
+    padding-top: 6rem;
+    display: block;
+    grid-area: n;
+    background-color: rgba(255, 255, 255, 0.842);
+    font-size: 50px;
+    height: 100vh;
+}
+.sidenavlink{
+    margin: 0px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 4rem;
+    outline-style: none;
+}
+.sidesocialDiv{
+    text-align: center;
+    margin-top: 2rem;
+}
+.bottomnavbar{
+    display: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0);
+    font-size: 7.2vw;
+    width: 100vw;
+    outline-style: none;
+}
+.is-active{
+    color: #ff9450 !important;
+}
+
+.bottomnavlink{
+    text-align: center;
+    text-decoration: none;
+    color: #ff9450;
+}
+
+.spaceBottomLinks{
+    margin: 0px 9px;
+    text-decoration: none;
+    color: white;
+}
+.spaceBottomHomeLink{
+    text-decoration: none;
+    color: white;
+}
+.bottomsocial{
+    text-align: center;
+    margin-top: 2rem;
+}
+.home{
+    margin-left: 190px;
+    grid-area: h;
+}
+
+.shake:hover {
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-5deg); }
+    20% { transform: translate(-3px, 0px) rotate(5deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(5deg); }
+    50% { transform: translate(-1px, 2px) rotate(-5deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-5deg); }
+    80% { transform: translate(-1px, -1px) rotate(5deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-5deg); }
+  }
+  .link{
+    color: gray;
+    transition: ease-out;
+    transition-duration: 1s;
+  }
+  .link:hover{
+    color: white;
+    transition: ease-out;
+    transition-duration: 0s;
+    cursor: pointer;
+  }
+.button{
+    color: lightgray;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #ff9450;
+    transition: ease-in;
+    transition-duration: 1s;
+  }
+  .button:hover{
+    color: #ff9450;
+    border: solid 1px gray;
+    transition: ease-in;
+    transition-duration: .5s;
+  }
+.projects{
+    margin-left: 190px;
+    grid-area: p;
+}
+.skills{
+    margin-left: 190px;
+    grid-area: s;
+}
+.contact{
+    margin-left: 190px;
+    grid-area: c;
+}
+
+@media(max-width: 666px){
+    .contact,.home,.projects,.skills{
+        margin-left: 5px;
+    }
+    .sidenavbar{
+        display: none;
+    }
+    .bottomnavbar{
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+}
